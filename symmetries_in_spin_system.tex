@@ -30,10 +30,25 @@ Furthermore, we will also assume the non-relativistic treatment of the system wh
 reversal symmetry as well.
 
 \section{Symmetries and Group Representation}
+Symmetries, in this context, are abstraction of the actions that preserve the system. This can be extremely beneficial
+since it reduces the space of physically viable solutions of the system. In order to make use of such benefit in computational
+works, it is crucial to represent such action in the form that usable numerically. The most common way is to choose a 
+vector space and basis to represent the system, and find the action of the symmetries as a transformation in such basis.
+This is one of the hand wavy definition of representation theory which is not the focus on this works. 
 
+\section{Irreducible Representation and Equivariance}
+By definition, a function is equivariant under certain action if the effect of the action on the input deterministically
+apply the corresponding action on the output. This greatly benefit computational field when we know symmetries of the 
+system since there is no need to recalculate (or relearn for machine learning) everything for all other inputs generated
+from applying symmetry actions on the original input if we know the corresponding actions on the output.
 
-\section{Irreducible Representation and Equivariant}
-
+This benefit can be boost by the concept of irreducible representation. A system's representation is reducible if there exist
+a basis of the representation such that there is a direct sum of its subspace where all group actions never mix subspaces, or
+they can all be written as the direct sum of their actions on each sub space. Hence, by representing the system in irreducible
+representation, it would minimize the unnecessary calculations, e.g. the part that mix subspaces. However, the reduction of
+computational cost from irriducible representation comes with the increase in restriction of the actions. (outside of
+the symmetry group that the irreducible representation represents) Moreover, the difficulties would also multiply when 
+one consider combining multiple known symmetry groups as shown in the following sections.
 
 \section{Irreducible Representation of Spin Systems}
 In order to fully utilize the symmetries of spin systems, one need to find the irreducible representations of the combined
@@ -50,7 +65,7 @@ rather than their absolute position. Hence, it should be the case that we will r
 positions for positional inputs since it is invariant to any physical translation.
 
 \section{Physical Permutation ($P$)}
-The physical permutation of the system's objects also doesn't commute with the physical rotation. However, the quantum
+The physical permutation of the system's objects doesn commute with the physical rotation. However, the quantum
 mechanical laws are applied to each and every objects in the same way regardless of the label we put on each object.
 Hence, it is also trivial to choose to restrict the model to be invariant of the object labeling, e.g. use sets as the
 key object containers.
@@ -96,15 +111,32 @@ rotation where both of them are representing system with spherical harmonic basi
 while other use complex spherical harmonic. The first representation also use real number field which make time reversal
 actions the same as physical inversion. On the other hand, the complex spherical harmonic representation require the 
 representations to be of complex field which make time reversal actions change the basis (flip sign of projected angular 
-momentum number, i.e. $m$), and perform conjugation on the representations. The situation is also different for the spin
-rotation representations where the real spinor bases representation can be of complex field.
+momentum number, i.e. $m$), and perform conjugation on the representations. 
 
-
+The situation is also different for the spin rotation representations where the real spinor bases representation can 
+be of complex field. However, specifically for spin system where the spin can have interaction with the extarnal field 
+and/or with other objects in the system, the choice of spinor representation with real basis functions is less desirable 
+due to the potential of symmetry breaking when consider the bases as energy eigenbases.
 
 \section{Equivariant Neural Network of Spin System}
-
+At high level, neural network is a function of inputs and weights. To make neural network equivariance to symmetries
+while also use the benefit from irreducible representation concept, every part in the neural network must also be
+equivariance (some of them might need to be invariance). 
 
 \section{Conclusion}
+Knowing symmetries of the system can greatly boost the effeciency of the computations especially for the deep neural network
+which can contain a huge number of parameters and every calculation reduction count. However, it is intrincically impossible 
+to create general neural network that is equivariant to every symmetry due to the commutation relations between them. 
+Hence, it is crucial to carefully analyze the interested system and select the set of commuted symmetries where the 
+model can be best benefit from the equivariance. As for the focused system in this work, spin system contains spatial 
+(physical translation, permutation, rotation, and inversion), spin (spin rotation), and temporal (time reversal) symmetries.
+Physical translation doesn't commute with others and physical permutation has no physical importance, and should
+be handle appropriately by using only their invariant representations. Physical rotation can be chosen to fully represented by 
+a subsets of spinor representation. Physical inversion and time reversal are the only discrete symmetries considered 
+which both commute with spin rotation and among themselves. Hence, we can represent them with channel mechanism when perform
+the message passing in neural network with a little care for system-action representation basis choices for time reversal. 
 
+With the procedural structure of this work, one can always apply the same analytical steps to create the equivariant 
+neural network that is tailored to any system with known symmetries.
 
 \end{document}
