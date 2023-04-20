@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.14)  19 APR 2023 20:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.14)  20 APR 2023 16:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**d:/latex_project/su2nn/symmetries_in_spin_system.tex
-(d:/latex_project/su2nn/symmetries_in_spin_system.tex
+**d:/latex_project/su2nn_supp/symmetries_in_spin_system.tex
+(d:/latex_project/su2nn_supp/symmetries_in_spin_system.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-07> (C:\Users\earthz\AppData\Local\Programs\MiKTeX\tex/latex/revtex\revtex4-2.cls
 Document Class: revtex4-2 2020/10/03 4.2e (https://journals.aps.org/revtex/ for documentation)
@@ -125,19 +125,22 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 45.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 45.
- (symmetries_in_spin_system.bbl) [1{C:/Users/earthz/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (symmetries_in_spin_system.aux) ) 
+ [1{C:/Users/earthz/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 80.
+ (symmetries_in_spin_system.bbl) [2] (symmetries_in_spin_system.aux) ) 
 Here is how much of TeX's memory you used:
- 2529 strings out of 476339
- 37227 string characters out of 5787647
- 1874340 words of memory out of 5000000
- 22999 multiletter control sequences out of 15000+600000
+ 2532 strings out of 476339
+ 37300 string characters out of 5787647
+ 1869340 words of memory out of 5000000
+ 23002 multiletter control sequences out of 15000+600000
  515023 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 45i,5n,53p,232b,156s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/earthz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/earthz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/earthz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/earthz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/earthz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/earthz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb>
-Output written on symmetries_in_spin_system.pdf (1 page, 83371 bytes).
+ 45i,5n,53p,237b,156s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/earthz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/earthz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/earthz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/earthz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/earthz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/earthz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/earthz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb>
+Output written on symmetries_in_spin_system.pdf (2 pages, 96620 bytes).
 PDF statistics:
- 36 PDF objects out of 1000 (max. 8388607)
+ 44 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

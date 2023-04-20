@@ -1,7 +1,7 @@
 \documentclass[reprint, 10pt]{revtex4-2}
 
 \begin{document}
-\title{Symmetries in Magnetic Materials Systems and Equivariant Neural Network}
+\title{Symmetries in Spin Systems and Physical Aware Equivariant Neural Network}
 
 \date{\today}
 
@@ -20,7 +20,7 @@ fact that the models are awared of the symmetries of the data points which limit
 and drive the necessity of the augmentations related to said symmetries obsolete.
 
 The goal of this work is to surve as the comprehensive mathematical guide for developing equivariant neural networks 
-for spin systems.
+for systems with known physical symmetries, particularly, in this case, spin system.
 
 \section{Symmetries in Spin System}
 For a general spin system, one can always divided the representation of the system into the physical space information,
@@ -56,15 +56,49 @@ Hence, it is also trivial to choose to restrict the model to be invariant of the
 key object containers.
 
 \section{Physical Rotation ($R$)}
-
+Any physical rotation of the system in 3D can be fully described by a real 3 by 3 orthogonal matrix with unit determinant
+which means that the action form the SO(3) group. One popular irredicuble representation of such group is by representing
+the system with spherical harmonic basis, and the actions with Wigner-D matrices. Since one of the main challenge in 
+deep neural network for learning 3D objects is in the amount of rotation augmentation which grow qubically with the 
+accuracy instead of linearly in the case of 2D objects, it is mostly beneficial to prioritize the model to be physical
+rotation equivariant.
 
 \section{Physical Inversion ($I$)}
-
+The physical inversion or parity is a very important physical symmetry that determine the possibility of certain interactions.
+Having this symmetry equivariance allows us to create physical awared machine learning model that can be fine tuned or separate
+the interested interactions. Fortunately, physical inversion commutes with physical rotation. This means that the combined
+irreducible representations are just the tensor products between their respective irredicible representations. The intuitive
+irreducible representation of the physical inversion is the symmetric-antisymmetric functions with the action to be multiplication
+by 1 for symmetric and by -1 for antisymmetric functions.
 
 \section{Spin Rotation ($R_s$)}
-
+Similar to the physical rotation, any spin rotation in spin space can be fully described by a complex 2 by 2 unitary matrix
+with unit determinant which is the SU(2) group. The popular irredicible representation of this group is the spinor representation
+which is representing the system with spinors, and the actions with Wigner-D matrices for spinors. We can detect that obvious
+that the choice for irreducible representation for spin rotation is similar to physical rotation since SU(2) is a doubl cover
+of SO(3) with the same Lie algebra. Hence, the irreducible representation of physical rotation is redundant with spin rotation.
+Since each irreducible representation of spin rotation can be indexed by a non-negative integer or half-integer $j$, 
+and those integer indexed representations are redundant with physical rotation. Hence, spin rotation equivariance model can
+also be used as physical equivariance model. One can also incoperate the physical inversion symmetry similar to the physical rotation case, 
+however, the representation for the actual spin is on spin space. Therefore, in the actual system, we need to restrict
+the parity of 1 to all spin representations.
 
 \section{Time Reversal ($\Theta$)}
+At first glance, the time reversal seems to be a direct copy of physical inversion, but for temporal axis, since it commutes
+with all other symmetries excluding the one we already only use the invariances. However, in order for the action to preserve 
+the non-relativistic Schr\"odinger equation, not only is the sign of time changed, but also the wavefunction conjugated. 
+This fact will make the representation of the group action vary vastly depending on the choice of other symmetric 
+representations whether the field of the representation is real or complex, and the behavior
+of those bases under time reversal actions. 
+
+For a concrete example, consider two irreducible representations of physical
+rotation where both of them are representing system with spherical harmonic basis, but one use real spherical harmonic
+while other use complex spherical harmonic. The first representation also use real number field which make time reversal
+actions the same as physical inversion. On the other hand, the complex spherical harmonic representation require the 
+representations to be of complex field which make time reversal actions change the basis (flip sign of projected angular 
+momentum number, i.e. $m$), and perform conjugation on the representations. The situation is also different for the spin
+rotation representations where the real spinor bases representation can be of complex field.
+
 
 
 \section{Equivariant Neural Network of Spin System}

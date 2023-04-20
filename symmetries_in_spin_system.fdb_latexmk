@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex symmetries_in_spin_system"] 1681952084 "symmetries_in_spin_system.aux" "symmetries_in_spin_system.bbl" "symmetries_in_spin_system" 1681952086 0
-  "./symmetries_in_spin_systemNotes.bib" 1681952085 104 4d8bb863c86f3d7b03a471e9d4707f34 ""
+["bibtex symmetries_in_spin_system"] 1682024008 "symmetries_in_spin_system.aux" "symmetries_in_spin_system.bbl" "symmetries_in_spin_system" 1682024009 0
+  "./symmetries_in_spin_systemNotes.bib" 1682024008 104 4d8bb863c86f3d7b03a471e9d4707f34 ""
   "C:/Users/earthz/AppData/Local/Programs/MiKTeX/bibtex/bst/revtex/apsrev4-2.bst" 1601735216 69609 e9dea59f0e753ccda3ddc8f5806d846d ""
-  "symmetries_in_spin_system.aux" 1681952085 1534 1f2d0c2bd7074259db0d663fe5610a66 "pdflatex"
+  "symmetries_in_spin_system.aux" 1682024008 1535 b624c86e10e8214426c87643b965dec4 "pdflatex"
   (generated)
   "symmetries_in_spin_system.bbl"
   "symmetries_in_spin_system.blg"
   (rewritten before read)
-["pdflatex"] 1681952085 "d:/latex_project/su2nn/symmetries_in_spin_system.tex" "symmetries_in_spin_system.pdf" "symmetries_in_spin_system" 1681952086 0
+["pdflatex"] 1682024008 "d:/latex_project/su2nn_supp/symmetries_in_spin_system.tex" "symmetries_in_spin_system.pdf" "symmetries_in_spin_system" 1682024009 0
   "C:/Users/earthz/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1681941500 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/earthz/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1678828308 23176270 69a26e7bcd117cc6cfee07209a0c37ab ""
   "C:/Users/earthz/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -21,6 +21,7 @@
   "C:/Users/earthz/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy9.tfm" 1136768653 1116 25a7bf822c58caf309a702ef79f4afbb ""
   "C:/Users/earthz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247596666 32080 340ef9bf63678554ee606688e7b5339d ""
   "C:/Users/earthz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb" 1247596667 32298 c6d25bb16d1eac01ebdc6d7084126a1e ""
+  "C:/Users/earthz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1247596667 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "C:/Users/earthz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb" 1247596666 37166 8ab3487cbe3ab49ebce74c29ea2418db ""
   "C:/Users/earthz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb" 1247596667 36094 798f80770b3b148ceedd006d487db67c ""
   "C:/Users/earthz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
@@ -33,10 +34,10 @@
   "C:/Users/earthz/AppData/Local/Programs/MiKTeX/tex/latex/revtex/revtex4-2.cls" 1601735216 202588 252d8ad05b878c573f3e2adfc38ce076 ""
   "C:/Users/earthz/AppData/Local/Programs/MiKTeX/tex/latex/textcase/textcase.sty" 1657800947 2405 93dca770d0598d835703b5d004a641b7 ""
   "C:/Users/earthz/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388494052 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "d:/latex_project/su2nn/symmetries_in_spin_system.tex" 1681952083 3979 835c885fac4ba5b8ea9bca1fb42f78f0 ""
-  "symmetries_in_spin_system.aux" 1681952085 1534 1f2d0c2bd7074259db0d663fe5610a66 "pdflatex"
-  "symmetries_in_spin_system.bbl" 1681952085 2035 35453d3875d823f0ec9445e740a573d9 "bibtex symmetries_in_spin_system"
-  "symmetries_in_spin_system.tex" 1681952083 3979 835c885fac4ba5b8ea9bca1fb42f78f0 ""
+  "d:/latex_project/su2nn_supp/symmetries_in_spin_system.tex" 1682024006 7971 d4a6d33016788efd0364447ad2152b77 ""
+  "symmetries_in_spin_system.aux" 1682024008 1535 b624c86e10e8214426c87643b965dec4 "pdflatex"
+  "symmetries_in_spin_system.bbl" 1682024008 2035 35453d3875d823f0ec9445e740a573d9 "bibtex symmetries_in_spin_system"
+  "symmetries_in_spin_system.tex" 1682024006 7971 d4a6d33016788efd0364447ad2152b77 ""
   (generated)
   "symmetries_in_spin_system.aux"
   "symmetries_in_spin_system.log"
