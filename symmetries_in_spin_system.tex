@@ -1,0 +1,76 @@
+\documentclass[reprint, 10pt]{revtex4-2}
+
+\begin{document}
+\title{Symmetries in Magnetic Materials Systems and Equivariant Neural Network}
+
+\date{\today}
+
+\maketitle
+\section{Introduction}
+Representing a spin system in a material efficiently is a challenge due to the sheer number of parameters involved, 
+to name a few: atomic types and their physical descriptors, atomic positions, spins, coupling constants, etc. 
+Each of them also obeys different sets of rules which always make representing the system complicated especially
+if one want to numerically represent it for computational purposes, e.g. machine learning.
+
+A class of machine learning that would greatly benefit from efficient representation of the system is neural network,
+which contains a large amount of training parameters and require significant amount of distinct data points with 
+good (sometimes crafty) augmentations. With the advance in recent development of equivariant neural network, it provides
+a great method to reduce both training parameters and augmentation for the same level of model complexity due to the
+fact that the models are awared of the symmetries of the data points which limit the possible choice of outcome,
+and drive the necessity of the augmentations related to said symmetries obsolete.
+
+The goal of this work is to surve as the comprehensive mathematical guide for developing equivariant neural networks 
+for spin systems.
+
+\section{Symmetries in Spin System}
+For a general spin system, one can always divided the representation of the system into the physical space information,
+and the spin space information which is the internal degree of freedom of the quantum angular momentum. Hence, in addition
+to the normal symmetries in E(3) for physical information, we need to consider the SU(2) properties of the spin as well.
+Furthermore, we will also assume the non-relativistic treatment of the system which entails the consideration of Time
+reversal symmetry as well.
+
+\section{Symmetries and Group Representation}
+
+
+\section{Irreducible Representation and Equivariant}
+
+
+\section{Irreducible Representation of Spin Systems}
+In order to fully utilize the symmetries of spin systems, one need to find the irreducible representations of the combined
+symmetries. However, not all symmetries commute with each other which make the action of one symmetry group mix different 
+irreducible representations of the other non-commuting group. This defeats the purposes of using irreducible representation 
+for efficient trainging of equivariant network. Hence, in these cases, we will restrict the model to only use invariant 
+information of one of the symmetries.
+
+\section{Physical Translation ($T$)}
+The physical translation of the system doesn't commute with the physical rotation which we will discuss in more
+detail in the following sections. This means that the tranlation will mix the different irreducible representation of 
+the rotation. Fortunately, the spin interaction directly depends on the relative distance between the involved objects
+rather than their absolute position. Hence, it should be the case that we will restrict the model to only use the relative 
+positions for positional inputs since it is invariant to any physical translation.
+
+\section{Physical Permutation ($P$)}
+The physical permutation of the system's objects also doesn't commute with the physical rotation. However, the quantum
+mechanical laws are applied to each and every objects in the same way regardless of the label we put on each object.
+Hence, it is also trivial to choose to restrict the model to be invariant of the object labeling, e.g. use sets as the
+key object containers.
+
+\section{Physical Rotation ($R$)}
+
+
+\section{Physical Inversion ($I$)}
+
+
+\section{Spin Rotation ($R_s$)}
+
+
+\section{Time Reversal ($\Theta$)}
+
+
+\section{Equivariant Neural Network of Spin System}
+
+
+\section{Conclusion}
+
+
+\end{document}
